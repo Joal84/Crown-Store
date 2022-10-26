@@ -7,7 +7,6 @@ import {
 import FormInput from "../form-input/form-input.component";
 import { SignUpContainer, ButtonContainer } from "./sign-in-form.styles.jsx";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
-import { UserContext } from "../../contexts/user.context";
 
 const defaultFormFields = {
   email: "",
