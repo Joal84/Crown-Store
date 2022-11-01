@@ -1,5 +1,14 @@
 import { creatAction } from "../../utils/reducer/reducer.utils";
 import { CATEGORIES_ACTION_TYPES } from "./category.types";
 
-export const setCategories = (categoriesArray) =>
-  creatAction(CATEGORIES_ACTION_TYPES.SET_CATEGORIES, categoriesArray);
+export const fetchCategoriesStart = () =>
+  creatAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START);
+
+export const fetchCategoriesSuccess = (categoriesArray) =>
+  creatAction(
+    CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_SUCCESS,
+    categoriesArray
+  );
+
+export const fetchCategoriesFailed = (error) =>
+  creatAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_FAILED, error);
