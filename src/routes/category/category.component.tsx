@@ -7,10 +7,16 @@ import Spinner from "../../components/spinner/spinner.component.jsx";
 import {
   selectCategoriesMap,
   selectCategoriesIsLoading,
-} from "../../store/categories/category.selector.js";
+} from "../../store/categories/category.selector";
+
+type categoryRouteParams = {
+  category: string;
+};
 
 const Category = () => {
-  const { category } = useParams();
+  const { category } = useParams<
+    keyof categoryRouteParams
+  >() as categoryRouteParams;
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
   const [products, setProducts] = useState(categoriesMap[category]);
