@@ -1,9 +1,9 @@
-import { CategoryContainer, CategoryTitle } from "./category.styles.jsx";
+import { CategoryContainer, CategoryTitle } from "./category.styles";
 import { useState, useEffect } from "react";
 import ProductCard from "../../components/product-card/product-card.component";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Spinner from "../../components/spinner/spinner.component.jsx";
+import Spinner from "../../components/spinner/spinner.component";
 import {
   selectCategoriesMap,
   selectCategoriesIsLoading,

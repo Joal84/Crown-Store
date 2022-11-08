@@ -7,7 +7,7 @@ import {
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
 import FormInput from "../form-input/form-input.component";
-import { SignUpContainer, ButtonContainer } from "./sign-in-form.styles.jsx";
+import { SignUpContainer, ButtonContainer } from "./sign-in-form.styles";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 import {
   googleSignInStart,
